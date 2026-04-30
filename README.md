@@ -11,12 +11,17 @@
 
 Welcome to my US Macroeconomic Analysis Portfolio Project! In this project, I conduct a comprehensive analysis of the United States economy during the post-COVID era (2021–2025). Using data directly from the Federal Reserve Economic Data (FRED) API, I examine the intricate relationships between inflation, monetary policy, and labor market resilience.  
 
+## Preview
+<img width="1493" height="865" alt="Summary" src="https://github.com/gauravkamble-insights/US-Macroeconomic-Analysis-using-FRED-API/blob/main/assets/Summary.jpeg" />
+
+
+  
 ## Project Scope
 The focus of this project is to analyze the "immaculate disinflation" and the Federal Reserve's tightening cycle. By examining 25 different macroeconomic indicators, I aim to provide insights into why a recession failed to materialize despite a 26-month yield curve inversion and how structural shifts have impacted the labor market.  
 
 ## Reports
-**Interactive Power BI Dashboard:** A multi-page dashboard visualizing inflation snapshots, Fed policy stance, and labor market recovery.
-**Comprehensive Python Notebook:** Detailed analysis including SQL queries, OLS regression, and machine learning models.
+- **[Interactive Power BI Dashboard:](https://github.com/gauravkamble-insights/US-Macroeconomic-Analysis-using-FRED-API/blob/main/reports/FRED_Macro_Dashboard.pdf)** A multi-page dashboard visualizing inflation snapshots, Fed policy stance, and labor market recovery.  
+- **[Comprehensive Python Notebook:](https://github.com/gauravkamble-insights/US-Macroeconomic-Analysis-using-FRED-API/blob/main/reports/Report.pdf)** Detailed analysis including SQL queries, OLS regression, and machine learning models.
 
 ## Project Structure
 ### Data Collection
@@ -35,18 +40,29 @@ The project utilized Python (Pandas) for data wrangling and SQLite for advanced 
 
 ## Exploratory Data Analysis (EDA)
 EDA was performed to identify structural breaks and trends in the post-pandemic landscape.
-- **Correlation Analysis:** A Pearson Correlation Matrix was used to identify the strongest leads for inflation.
+- **Correlation Analysis:** A Pearson Correlation Matrix was used to identify the strongest leads for inflation.  
+<img width="1801" height="1334" alt="Pearson Corr Matrix" src="https://github.com/gauravkamble-insights/US-Macroeconomic-Analysis-using-FRED-API/blob/main/assets/Pearson%20Corr%20Matrix.png" />  
+  
 - **Labor Market Dynamics:** Analysis of the Phillips Curve to estimate the post-COVID NAIRU.
-- **Monetary Stance:** Evaluation of the Taylor Rule to determine if the Fed was "behind the curve".
+<img width="1560" height="1037" alt="Phillips Curve" src="https://github.com/gauravkamble-insights/US-Macroeconomic-Analysis-using-FRED-API/blob/main/assets/Phillips%20Curve.png" />  
+  
+- **Monetary Stance:** Evaluation of the Taylor Rule to determine if the Fed was "behind the curve".  
+<img width="2086" height="1335" alt="Taylor Rule" src="https://github.com/gauravkamble-insights/US-Macroeconomic-Analysis-using-FRED-API/blob/main/assets/Taylor%20Rule.png" />
+<img width="2087" height="884" alt="Inflation, CPI, Unemployment" src="https://github.com/gauravkamble-insights/US-Macroeconomic-Analysis-using-FRED-API/blob/main/assets/Inflation%2C%20CPI%2C%20Unemployment.png" />
 
+  
 ## Predictive Models
 - **ARIMA(0,2,1):** Used for 12-month inflation forecasting, achieving a MAPE of 5.97% on hold-out data.
+<img width="2086" height="885" alt="ARIMA Forecast" src="https://github.com/gauravkamble-insights/US-Macroeconomic-Analysis-using-FRED-API/blob/main/assets/ARIMA%20Forecast.png" />  
+  
 - **XGBoost Classifier:** Built to assess the probability of high inflation (CPI > 3%) based on 11 leading indicators, including consumer sentiment and yield spreads.
 
 ## Insights and Conclusions
 The Taylor Rule Gap: The Fed was approximately 6 percentage points behind the Taylor Rule prescribed rate in 2021–2022.
 - **Real Rates:** The real Fed Funds Rate hit -4.47% in 2022, the most stimulative stance since the 1970s.
 - **The Inversion Paradox:** The yield curve remained inverted for 26 months (July 2022 – August 2024) without a recession materializing.
+<img width="2085" height="1185" alt="US 10Y Treasury Yields" src="https://github.com/gauravkamble-insights/US-Macroeconomic-Analysis-using-FRED-API/blob/main/assets/US%2010Y%20Treasury%20Yields.png" />  
+  
 - **Structural Labor Shifts:** Post-COVID NAIRU is estimated at 4.41%, higher than the pre-pandemic 4.0%.
 
 ## Visualizations
@@ -61,13 +77,13 @@ The project findings are supported by several key visualizations:
 - **Structural Breaks:** The unique nature of the pandemic recovery makes historical comparisons (e.g., pre-2020 NAIRU) difficult to apply directly.
 
 ## Key Questions Explored
-Q1. Was the Fed too loose for too long?  
+**Q1. Was the Fed too loose for too long?**  
 Yes, the Taylor Rule analysis shows a significant gap in 2021–2022.  
 
-Q2. Is a recession still coming?  
+**Q2. Is a recession still coming?**  
 Despite the long yield curve inversion, labor resilience and "immaculate disinflation" suggest a soft landing.
 
-Q3. Where is inflation heading?  
+**Q3. Where is inflation heading?**  
 Models suggest inflation may re-accelerate toward ~3.4% by late 2026 if policy eases prematurely.
 
 ## Summary of Findings
@@ -76,7 +92,7 @@ Models suggest inflation may re-accelerate toward ~3.4% by late 2026 if policy e
 - Monitor M2 Growth and Real Fed Funds Rate as primary leading indicators for future inflation.  
 
 ## Author
-- <b>©2026 Gaurav Kamble.  
+- <b>©2026 Gaurav Kamble. All rights reserved.  
 - <b>[LinkedIn](https://www.linkedin.com/in/gaurav-kamble/)</b>
 - <b>[Tableau Public](https://public.tableau.com/app/profile/datagaurav/vizzes)</b>
 - <b>[Kaggle](https://www.kaggle.com/justgk)</b>
